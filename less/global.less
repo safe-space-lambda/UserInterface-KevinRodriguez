@@ -15,7 +15,8 @@
 	.container{
 		width: 100%;
         margin: auto 0;
-		background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+		background-image: @blurberry;
+		color: green;
 	
 	}
 	img{
@@ -34,6 +35,7 @@
 	.section3{
 		background-color: white;
 		border: 1px solid red;
+		margin: 0;
 		img{
 			height: 300px;
 			width: 300px;
@@ -66,12 +68,9 @@
 		// 	left: 30em;
 		// 	margin: 2em 12em;
 		// }
-		.headline{
-			padding: 16em;
-		}
 	}
 	.section6{
-		display: flex;
+		display:flex;
 		justify-content: space-around;
 		text-align: center;
 		background: white;
@@ -85,11 +84,12 @@
 			height: 50%;
 		}
 	}
+
 @media(max-width: 500px) {
 	.container{
-	display: flex;
-	flex-direction: column;
-	width: 880px;
+	display:flex;
+	flex-direction:column;
+	width: 100%;
 	h1{
 	
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -121,6 +121,15 @@
 		ul{
 			text-align: center;
 		}
+	.cheese{
+		flex-direction: column;
+		.doggo{
+			padding: 5em;
+		}
+		.text3{
+			padding: 5em;
+		}
+	}
 	.section5{
 
 		.icon{
@@ -129,35 +138,40 @@
 			box-sizing: border-box;
 			align-items: stretch;
 			padding-left: 150px;
+			.headline {
+				justify-content: center;
+				padding: 4em 10em 2em 2em;
+			}
 		}
 		h3{
 			font-size: 12px;
 		}
-	.headline {
+
 			h3{
 			border-bottom: 1px solid grey;
 				}
-			margin: 0 5em;
 			button{
 				width: 100%;
 			}
 			}
-
-		}
 		.signup{
 			button{
-				display: flex;
-				flex-direction: column;
+			display:flex;
+			flex-direction: column;
+			color: green;
 			}
 			.signbt1{
 				background-color: white;
 				
 			}
 		}
-	.section3{
-		.doggo{
-			padding: 0 12em;
-			display: block;
+		.section6{
+			flex-direction: column;
+			div{
+				width: 100%;
+			}
+			button{
+				margin: 0;
+			}
 		}
-	}
 	}
