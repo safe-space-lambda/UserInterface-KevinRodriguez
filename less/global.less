@@ -7,11 +7,93 @@
 	}
 	h1{
 		font-weight: bold;
+		text-align: center;
+	}
+	p{
+		text-align: center;
 	}
 	.container{
 		width: 100%;
         margin: auto 0;
-        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+		background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	
+	}
+	img{
+		height: 100px;
+		width: 100px;
+	}
+	button {
+		border-radius: 4px;
+		border: 1px solid grey;
+		margin: 3em 0 3em 2em;
+		padding: 15px 115px 15px 115px;
+	}
+	p{
+		text-align: center;
+	}
+	.section3{
+		background-color: white;
+		border: 1px solid red;
+		img{
+			position: relative;
+			top: 50px;
+			height: 300px;
+			width: 300px;
+			left: 16em;
+			padding-bottom: 5em;
+		}
+		h2{
+			text-align: end;
+			position: relative;
+			bottom: 10em;
+		}
+		span{
+		    content: '';
+    		display: inline-block;
+    		height: 1px;
+    		margin-top: 1.5em;
+    		width: 6em;
+		}
+		p{
+			text-align: end;
+			position: relative;
+			bottom: 12em;
+		}
+	}
+	.section5{
+		background: url(/less/iStock-494239087.jpg);
+		background-size: auto;
+		background-attachment: fixed;
+		// h3{
+		// 	bottom: 10em;
+		// 	position: relative;
+		// 	left: 30em;
+		// 	margin: 2em 31em 0 18em;
+		// }
+		// p{
+		// 	bottom: 15em;
+		// 	position: relative;
+		// 	left: 30em;
+		// 	margin: 2em 12em;
+		// }
+		.headline{
+			padding: 16em;
+		}
+	}
+	.section6{
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		background: white;
+		padding-top: 2em;
+		div{
+			width: 30%;
+			height: 600px;
+		}
+		img{
+			width: 60%;
+			height: 50%;
+		}
 	}
 @media(max-width: 500px) {
 	.container{
@@ -36,11 +118,13 @@
 	.header{
 		p{
 			line-height: 2;
+			margin: 0;
 		}
 
 		}
 		a{
 			text-align: center;
+			margin: 5em;
 		}
 		ul{
 			text-align: center;
