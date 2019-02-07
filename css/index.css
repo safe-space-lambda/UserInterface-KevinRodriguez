@@ -129,6 +129,14 @@ textarea {
   -ms-appearance: none;
   appearance: none;
 }
+.header .logo {
+  display: flex;
+  justify-content: center;
+}
+.header img {
+  height: 30%;
+  width: 20%;
+}
 .header a {
   text-align: center;
   display: flex;
@@ -383,7 +391,7 @@ p {
 }
 .middle-content {
   background-color: white;
-  margin: 5em 0 4em 0;
+  margin: 1em 0 4em 0;
   border: 1px solid red;
   padding: 5em 0;
 }
@@ -393,6 +401,11 @@ p {
 .middle-content img {
   height: 50%;
   width: 50%;
+  display: block;
+  margin-left: auto;
+}
+.glorp {
+  width: 30%;
 }
 .card {
   display: none;
