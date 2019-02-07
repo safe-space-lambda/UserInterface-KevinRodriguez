@@ -60,3 +60,7 @@ class TabLink {
   */
   
   let tabs = document.querySelectorAll('.tab').forEach( tab => new TabLink(tab));
+
+  window.attachEvent('onload', () =>{
+    Tweenmax.to('.opener', 1,{left:400})
+  });

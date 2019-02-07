@@ -14,10 +14,8 @@
 	}
 	.container{
 		width: 100%;
-        margin: auto 0;
-		background-image: @blurberry;
-		color: green;
-	
+        margin: 0 auto;
+		background: @blurberry;
 	}
 	img{
 		height: 100px;
@@ -26,7 +24,6 @@
 	button {
 		border-radius: 4px;
 		border: 1px solid grey;
-		margin: 3em 0 3em 2em;
 		padding: 15px 115px 15px 115px;
 	}
 	p{
@@ -56,6 +53,8 @@
 		background: url(/less/iStock-494239087.jpg);
 		background-size: auto;
 		background-attachment: fixed;
+		text-align: center;
+		margin: 5em;
 		// h3{
 		// 	bottom: 10em;
 		// 	position: relative;
@@ -84,17 +83,43 @@
 			height: 50%;
 		}
 	}
+	.copyright{
+		color: white;
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		padding: 2em 8em;
+		.login{
+			&:hover {
+				cursor: pointer;
+				}
+		}
+		a{
+			width: 118px;
+		}
+	}
+	.menu {
+		display: none;
+		position: fixed;
+		top: 75px;
+		left: 0;
+		width: 350px;
+		height: 10vh; /* This give the height 100% of the screen or, '100% of View Height' */
+		background-color: #81C784;
+		border: 1px solid #004D40;
+		border-left: none;
+		border-bottom: none;
+		z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
+	}
+	.menu--open {
+		display: block;
+	}	
 
 @media(max-width: 500px) {
 	.container{
 	display:flex;
 	flex-direction:column;
 	width: 100%;
-	h1{
-	
-	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-		}
 	}
 	button{
 		border-radius: 4px;
@@ -108,39 +133,33 @@
 		
 	}
 	.header{
-		p{
+		p	{
 			line-height: 2;
 			margin: 0;
-		}
+			}
 
-		}
-		a{
+			}
+		a	{
 			text-align: center;
-			margin: 5em; 
-		}
+			}
 		ul{
 			text-align: center;
 		}
 	.cheese{
 		flex-direction: column;
 		.doggo{
-			padding: 5em;
+			padding: 3em;
 		}
 		.text3{
-			padding: 5em;
+			padding: 0em;
 		}
 	}
 	.section5{
 
 		.icon{
 			display: flex;
-			flex-wrap: wrap;
-			box-sizing: border-box;
-			align-items: stretch;
-			padding-left: 150px;
 			.headline {
 				justify-content: center;
-				padding: 4em 10em 2em 2em;
 			}
 		}
 		h3{
@@ -155,15 +174,20 @@
 			}
 			}
 		.signup{
+			text-align: center;
 			button{
 			display:flex;
 			flex-direction: column;
-			color: green;
+			margin: 3em 0 3em 8em;
 			}
 			.signbt1{
 				background-color: white;
 				
 			}
+		}
+		.section5{
+			display: flex;
+			justify-content: center;
 		}
 		.section6{
 			flex-direction: column;
@@ -173,5 +197,11 @@
 			button{
 				margin: 0;
 			}
+		}
+		.footer-icons{
+		padding-bottom: 2em;
+		}
+		.copyright{
+			padding: 0;
 		}
 	}
