@@ -82,6 +82,14 @@
 			width: 60%;
 			height: 50%;
 		}
+		button{
+			&:hover {
+				cursor: pointer;
+				}
+		}
+		a{
+			text-decoration: none;
+		}
 	}
 	.copyright{
 		color: white;
@@ -96,6 +104,7 @@
 		}
 		a{
 			width: 118px;
+			text-decoration: none;
 		}
 	}
 	.menu {
@@ -117,8 +126,8 @@
 
 @media(max-width: 500px) {
 	.container{
-	display:flex;
-	flex-direction:column;
+		display: flex;
+		flex-direction: column;
 	width: 100%;
 	}
 	button{
@@ -176,7 +185,7 @@
 		.signup{
 			text-align: center;
 			button{
-			display:flex;
+			display: flex;
 			flex-direction: column;
 			margin: 3em 0 3em 8em;
 			}

@@ -1,3 +1,6 @@
+.flexed {
+  display: flex;
+}
 html,
 body,
 div,
@@ -225,6 +228,12 @@ p {
   width: 60%;
   height: 50%;
 }
+.section6 button:hover {
+  cursor: pointer;
+}
+.section6 a {
+  text-decoration: none;
+}
 .copyright {
   color: white;
   display: flex;
@@ -237,6 +246,7 @@ p {
 }
 .copyright a {
   width: 118px;
+  text-decoration: none;
 }
 .menu {
   display: none;
