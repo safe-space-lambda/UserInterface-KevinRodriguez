@@ -27,3 +27,34 @@ which were used for the most part for every single part of the page is located i
 * The JS needed for the app requires a knowledge of all the basic functions and the use of arrays and their manipulations. 
 
 * Use of constructors and DOM events are to be used in order to activate and manipulate the tabs.
+
+* In order for JS to work the group had to create two classes which will be able to control the tabs and the elements associated with them. The Tablink class for example is used to take a component and create components with it's traits.
+These components will be the tabs in this project and with it method will be capable of being selected. The second class should be the class which shows the information associated with the first class's component. 
+
+#### Attributes
+
+# General Attributes:
+* h1,h2,h3
+    * font-family: "Source Sans Pro", Helvetica, sans-serif;
+	* font-size: 16pt;
+	* font-weight: 300;
+    * line-height: 1.65em;
+    * color: #666;
+* Button
+    * border-radius: 4px;
+	* border: 1px solid grey;
+	* padding: 15px 115px 15px 115px;
+* Img
+    * height: 100px;
+	* width: 100px;
+* a
+    * text-align: center;
+    * display: flex;
+    * padding: 10px 25px;
+    * border: 2px white solid;
+* media
+    * max-width: 500px
+* colors
+    * General Colors: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+
