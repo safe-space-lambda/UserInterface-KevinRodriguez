@@ -1,0 +1,213 @@
+	h1,h2,h3{
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 16pt;
+		font-weight: 300;
+        line-height: 1.65em;
+        color: #666;
+	}
+	h1{
+		font-weight: bold;
+		text-align: center;
+	}
+	p{
+		text-align: center;
+	}
+	.container{
+		width: 100%;
+        margin: 0 auto;
+		background: @blurberry;
+	}
+	img{
+		height: 100px;
+		width: 100px;
+	}
+	button {
+		border-radius: 4px;
+		border: 1px solid grey;
+		padding: 15px 115px 15px 115px;
+	}
+	.section3{
+		background-color: white;
+		border: 1px solid red;
+		margin: 0;
+		img{
+			height: 300px;
+			width: 300px;
+			padding: 2em 2em;
+		}
+		.cheese{
+
+			padding-bottom: 3em;
+			display: flex;
+			justify-content: center;
+			.text3{
+				text-align: center;
+				padding: 10em 0;
+			}
+		}
+	}
+	.section5{
+		background: url(/less/iStock-494239087.jpg);
+		background-size: auto;
+		background-attachment: fixed;
+		text-align: center;
+		margin: 5em;
+		// h3{
+		// 	bottom: 10em;
+		// 	position: relative;
+		// 	left: 30em;
+		// 	margin: 2em 31em 0 18em;
+		// }
+		// p{
+		// 	bottom: 15em;
+		// 	position: relative;
+		// 	left: 30em;
+		// 	margin: 2em 12em;
+		// }
+	}
+	.section6{
+		display:flex;
+		justify-content: space-around;
+		text-align: center;
+		background: white;
+		padding-top: 2em;
+		div{
+			width: 30%;
+			height: 600px;
+		}
+		img{
+			width: 60%;
+			height: 50%;
+		}
+		button{
+			&:hover {
+				cursor: pointer;
+				}
+		}
+		a{
+			text-decoration: none;
+		}
+	}
+	.copyright{
+		color: white;
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		padding: 2em 8em;
+		.login{
+			&:hover {
+				cursor: pointer;
+				}
+		}
+		a{
+			width: 118px;
+			text-decoration: none;
+		}
+	}
+	.menu {
+		display: none;
+		position: fixed;
+		top: 75px;
+		left: 0;
+		width: 350px;
+		height: 10vh; /* This give the height 100% of the screen or, '100% of View Height' */
+		background-color: #81C784;
+		border: 1px solid #004D40;
+		border-left: none;
+		border-bottom: none;
+		z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
+	}
+	.menu--open {
+		display: block;
+	}	
+
+@media(max-width: 500px) {
+	.container{
+		display: flex;
+		flex-direction: column;
+	width: 100%;
+	}
+	button{
+		border-radius: 4px;
+		border: 1px solid grey;
+		margin: 3em 0 3em 11em;
+		padding: 15px 115px 15px 115px;
+	}
+	img{
+		height: 100px;
+		width: 100px;
+		
+	}
+	.header{
+		p	{
+			line-height: 2;
+			margin: 0;
+			}
+
+			}
+		a	{
+			text-align: center;
+			}
+		ul{
+			text-align: center;
+		}
+	.cheese{
+		flex-direction: column;
+		.doggo{
+			padding: 3em;
+		}
+		.text3{
+			padding: 0em;
+		}
+	}
+	.section5{
+
+		.icon{
+			display: flex;
+			.headline {
+				justify-content: center;
+			}
+		}
+		h3{
+			font-size: 12px;
+		}
+
+			h3{
+			border-bottom: 1px solid grey;
+				}
+			button{
+				width: 100%;
+			}
+			}
+		.signup{
+			text-align: center;
+			button{
+			display: flex;
+			flex-direction: column;
+			margin: 3em 0 3em 8em;
+			}
+			.signbt1{
+				background-color: white;
+				
+			}
+		}
+		.section5{
+			display: flex;
+			justify-content: center;
+		}
+		.section6{
+			flex-direction: column;
+			div{
+				width: 100%;
+			}
+			button{
+				margin: 0;
+			}
+		}
+		.footer-icons{
+		padding-bottom: 2em;
+		}
+		.copyright{
+			padding: 0;
+		}
+	}
